@@ -284,7 +284,8 @@ module Signifyd
       :headers => headers,
       :open_timeout => 30,
       :payload => payload,
-      :timeout => 80
+      :timeout => 80,
+      :ssl_version => 'TLSv1_2'
     }.merge(ssl_opts)
 
     # Make the request
